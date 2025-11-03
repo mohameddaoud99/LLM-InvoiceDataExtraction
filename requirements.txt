@@ -1,0 +1,8 @@
+google-generativeai
+python-dotenv
+Pillow
+PyPDF2
+flask
+flask-cors
+werkzeug
+requests

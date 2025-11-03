@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment
+.env
+venv/
+env/
+
+# Output files
+facture_extraite.json
+*.json
+
+# Test files
+test_*.png
+test_*.pdf
