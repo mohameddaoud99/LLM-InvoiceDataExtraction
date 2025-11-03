@@ -7,8 +7,8 @@ from flask_cors import CORS
 from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 
-from services.gemini_service import extraire_facture
-from utils.file_handler import valider_fichier, nettoyer_fichiers_temporaires
+from flask_app.services.gemini_service import extraire_facture
+from flask_app.utils.file_handler import valider_fichier, nettoyer_fichiers_temporaires
 
 # Charger les variables d'environnement
 load_dotenv()
