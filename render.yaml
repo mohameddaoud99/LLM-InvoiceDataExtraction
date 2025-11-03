@@ -1,0 +1,12 @@
+services:
+  # Backend Flask API
+  - type: web
+    name: invoice-extraction-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT flask_app.app:app
+    envVars:
+      - key: FLASK_DEBUG
+        value: False
+      - key: GOOGLE_API_KEY
+        sync: false  # À configurer manuellement dans Render Dashboard
